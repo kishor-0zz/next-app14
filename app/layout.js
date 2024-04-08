@@ -1,5 +1,11 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../public/assets/sass/style.scss";
+import "../public/assets/css/fontawesome.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../public/assets/css/slick.min.css";
+import "../public/assets/js/main.js";
+// import "../public/assets/js/slick.min.js";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        </body>
     </html>
   );
 }
